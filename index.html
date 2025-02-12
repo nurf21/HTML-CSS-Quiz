@@ -19,20 +19,20 @@
       </nav>
     </header>
     <main>
-      <form method="post" action="#">
+      <form method="post" action="#" id="quiz-form">
         <section role="region" aria-labelledby="profile">
           <h2 id="profile">Profile</h2>
           <div class="info">
             <label for="student-name">Name:</label>
-            <input type="text" name="student-name" id="student-name" />
+            <input type="text" name="student-name" id="student-name" required/>
           </div>
           <div class="info">
             <label for="student-email">Email:</label>
-            <input type="email" name="student-email" id="student-email" />
+            <input type="email" name="student-email" id="student-email" required/>
           </div>
           <div class="info">
             <label for="birth-date">Date of Birth:</label>
-            <input type="date" name="birth-date" id="birth-date" />
+            <input type="date" name="birth-date" id="birth-date" required/>
           </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
@@ -46,13 +46,13 @@
               <ul class="answers-list">
                 <li>
                   <label for="q1-a1">
-                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    <input type="radio" id="q1-a1" name="q1" value="true" required/>
                     True
                   </label>
                 </li>
                 <li>
                   <label for="q1-a2">
-                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    <input type="radio" id="q1-a2" name="q1" value="false"/>
                     False
                   </label>
                 </li>
@@ -68,13 +68,13 @@
               <ul class="answers-list">
                 <li>
                   <label for="q2-a1">
-                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    <input type="radio" id="q2-a1" name="q2" value="true" required/>
                     True
                   </label>
                 </li>
                 <li>
                   <label for="q2-a2">
-                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    <input type="radio" id="q2-a2" name="q2" value="false"/>
                     False
                   </label>
                 </li>
@@ -96,7 +96,7 @@
               </select>
             </div>
             <div class="question-block">
-              <label for="css-textarea">Give us your feedback</label>
+              <label for="css-textarea">Give us your feedback:</label>
             </div>
             <div class="answer">
               <textarea id="css-textarea" name="css-questions" rows="5" cols="25"></textarea>

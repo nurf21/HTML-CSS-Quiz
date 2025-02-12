@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   color: #333333;
   font-family: Lato;
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -19,6 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   top: 0;
+  position: sticky;
 }
 
 h1 {
@@ -42,6 +45,7 @@ nav > ul {
   padding-inline-start: 0;
   margin-block: 0;
   height: 100%;
+  list-style: none;
 }
 
 nav > ul > li {
@@ -49,6 +53,7 @@ nav > ul > li {
   margin: 0 0.2rem;
   padding: 0.2rem;
   display: block;
+  transition: background-color 0.3s ease;
 }
 
 nav > ul > li:hover {
@@ -64,23 +69,29 @@ li > a {
 
 main {
   padding-top: 25px;
+  display: block;
 }
 
 section {
   width: 80%;
   margin: 0 auto 10px auto;
   max-width: 600px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1,
 h2 {
   font-family: Roboto, "Open Sans";
+  margin-bottom: 10px;
 }
 
 h2 {
   border-bottom: 4px solid #DDDDDD;
   margin-top: 0px;
-  padding-top: 30px;
 }
 
 .info {
@@ -94,6 +105,9 @@ h2 {
 
 input {
   font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
 }
 
 .info label, .info input {
@@ -106,7 +120,7 @@ input {
 }
 
 .info label {
-  width: 17%;
+  width: 20%;
   min-width: 55px;
   text-align: left;
 }
@@ -147,18 +161,24 @@ button {
   font-size: 1.438rem;
   background: #FFFFFF;
   border: 3px solid #4A90E2;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #4A90E2;
   color: #FFFFFF;
-  cursor: pointer;
 }
 
 footer {
   background-color: #333333;
   display: flex;
   justify-content: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer,
