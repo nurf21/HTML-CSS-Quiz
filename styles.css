@@ -10,7 +10,6 @@ body {
   color: #333333;
   font-family: Lato;
   margin: 0;
-  padding: 0;
 }
 
 header {
@@ -22,6 +21,7 @@ header {
   align-items: center;
   top: 0;
   position: sticky;
+  z-index: 1;
 }
 
 h1 {
@@ -199,4 +199,28 @@ address {
   clip: rect(0, 0, 0, 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+  }
+  .info input {
+    width: 70%;
+  }
+  .info label {
+    width: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    width: 95%;
+  }
+  .info input {
+    width: 80%;
+  }
+  .info label {
+    width: 15%;
+  }
 }
